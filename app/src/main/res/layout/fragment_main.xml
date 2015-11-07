@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/white"
+    tools:context="haninkyu.yoo_dong.control.fragment.MainFragment">
 
     <GridLayout
-        android:id="@+id/mainContent"
+        android:id="@+id/grid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:alignmentMode="alignMargins"
+        android:alignmentMode="alignBounds"
         android:columnCount="2"
+        android:background="@color/grayContact"
         android:orientation="horizontal"
         android:padding="16dp"
         android:useDefaultMargins="true">
 
     </GridLayout>
-</LinearLayout>
+</FrameLayout>

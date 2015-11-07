@@ -21,7 +21,7 @@
             android:value="658e849219869f85c86ea2d959087426" />
 
         <activity
-            android:name="haninkyu.yoo_dong.control.activity.MainActivity"
+            android:name="haninkyu.yoo_dong.control.activity.BaseMainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

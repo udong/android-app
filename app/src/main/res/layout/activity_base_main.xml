@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="haninkyu.yoo_dong.control.activity.BaseMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical">
+
+            <ImageView
+                android:id="@+id/main"
+                android:layout_width="54dp"
+                android:layout_height="64dp"
+                android:onClick="mainBtn"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mainline" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical">
+
+            <ImageView
+                android:id="@+id/matching"
+                android:layout_width="54dp"
+                android:layout_height="64dp"
+                android:onClick="mainBtn"
+                android:scaleType="centerCrop"
+                android:src="@drawable/matching" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical">
+
+
+            <ImageView
+                android:id="@+id/message"
+                android:layout_width="54dp"
+                android:layout_height="64dp"
+                android:onClick="mainBtn"
+                android:src="@drawable/message" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical">
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="54dp"
+                android:layout_height="64dp"
+                android:onClick="mainBtn"
+                android:scaleType="centerCrop"
+                android:src="@drawable/search" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical">
+
+            <ImageView
+                android:id="@+id/setting"
+                android:layout_width="54dp"
+                android:layout_height="64dp"
+                android:onClick="mainBtn"
+                android:scaleType="centerCrop"
+                android:src="@drawable/setting" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray" />
+
+    <fragment
+        android:id="@+id/content"
+        android:name="haninkyu.yoo_dong.control.fragment.MainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -5,4 +5,5 @@ package haninkyu.yoo_dong.model;
  */
 public class Constant {
     public final static String LOG = "U-Dong log";
+    public final static String PACKAGE = "haninkyu.yoo_dong";
 }
