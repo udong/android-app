@@ -1,4 +1,4 @@
-package haninkyu.drama.yoo_dong;
+package haninkyu.yoo_dong;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

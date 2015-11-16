@@ -2,9 +2,6 @@ package haninkyu.yoo_dong.control.activity;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -15,6 +12,7 @@ import haninkyu.yoo_dong.control.fragment.NotifiFragment;
 import haninkyu.yoo_dong.control.fragment.SearchFragment;
 import haninkyu.yoo_dong.control.fragment.SettingFragment;
 import haninkyu.yoo_dong.model.Constant;
+import com.facebook.drawee.backends.pipeline.*;
 
 /**
  * Created by IVE on 2015-09-19.
@@ -30,6 +28,7 @@ public class BaseMainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fresco.initialize(this);
         setContentView(R.layout.activity_base_main);
 
         main = (ImageView) findViewById(R.id.main);
