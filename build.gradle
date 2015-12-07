@@ -25,7 +25,7 @@ subprojects {
             url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/'
         }
         maven {
-            url 'http://repo.spring.io/milestone'
+            url 'http://repo.spring.io/snapshot'
         }
 
     }

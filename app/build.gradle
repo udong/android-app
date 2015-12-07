@@ -10,25 +10,34 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        packagingOptions {
+            exclude 'META-INF/LICENSE'
+            exclude 'META-INF/NOTICE'
+            exclude 'META-INF/notice.txt'
+            exclude 'META-INF/license.txt'
+        }
     }
-    packagingOptions {
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/NOTICE'
-    }
-}
 
-dependencies {
-    compile 'com.facebook.fresco:fresco:0.7.0+'
-    compile 'org.springframework.android:spring-android-rest-template:2.0.0.M1'
-    compile 'com.android.support:appcompat-v7:23.1.0'
-    compile 'com.android.support:design:23.1.0'
-    // 카카오톡 sdk를 사용하기 위해 필요.
-    compile group: 'com.kakao.sdk', name: 'kakaotalk', version: project.KAKAO_SDK_VERSION
-    compile group: 'com.kakao.sdk', name: 'usermgmt', version: project.KAKAO_SDK_VERSION
+    dependencies {
+        compile 'com.facebook.fresco:fresco:0.7.0+'
+        compile 'org.springframework.android:spring-android-rest-template:2.0.0.BUILD-SNAPSHOT'
+        compile 'com.android.support:appcompat-v7:23.1.0'
+        compile 'com.android.support:design:23.1.0'
+        // 카카오톡 sdk를 사용하기 위해 필요.
+        compile group: 'com.kakao.sdk', name: 'kakaotalk', version: project.KAKAO_SDK_VERSION
+        compile group: 'com.kakao.sdk', name: 'usermgmt', version: project.KAKAO_SDK_VERSION
+    }
 }

@@ -1,0 +1,9 @@
+<우리동네 동호회>
+작성자 : 한인규(dlsrb0412@naver.com)
+
+03. MVP PATTERN APPLY
+작성일 : 2015-11-26
+MVP 패턴을 적용하여 프로젝트를 재구성시작
+안드로이드는 activity 클래스가 컨트롤의 역할을 하는 동시에 뷰를 생성하고 조작하므로 기존의 MVC 패턴에 어긋나는 구조를 가졌다.
+이에 따라 activity 클래스에 VIEW를 생성 및 조작을 담당하지만, 이를 컨트롤하는 클래스 PRESENTER를 따로 만들어 최대한 코드와 기능을 분리하여 유지보수를 용이하게 한다.
+MVP 패턴 참조 - http://tosslab.github.io/android/2015/03/01/01.Android%20mvc%20mvvm%20mvp/

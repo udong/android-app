@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="#ffffff"
     android:orientation="vertical"
-    tools:context="haninkyu.yoo_dong.control.activity.BaseMainActivity">
+    tools:context=".view.activity.BaseMainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -96,7 +96,7 @@
 
     <fragment
         android:id="@+id/content"
-        android:name="haninkyu.yoo_dong.control.fragment.MainFragment"
+        android:name="haninkyu.yoo_dong.view.fragment.MainFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

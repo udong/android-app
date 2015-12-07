@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2015.  In-Kyu Heyden Han
+  ~ 문의 : dlsrb0412@naver.com
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="haninkyu.yoo_dong.view.login.SignInFormActivity">
+
+    <RelativeLayout
+        android:id="@+id/imageLayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray">
+
+        <haninkyu.yoo_dong.view.imageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:onClick="signinformBtn"
+            android:src="@drawable/kakao_default_profile_image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image"
+            android:layout_alignParentStart="true"
+            android:background="@color/blackAlpha"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="프로필 변경"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:scrollbars="none"
+        android:padding="12dp"
+        android:layout_weight="1">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:gravity="center_horizontal|center_vertical">
+                <haninkyu.yoo_dong.view.textview.SignInTextView
+                    android:text="이메일" />
+                <haninkyu.yoo_dong.view.edittxt.LoginEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="dlsrb0412@naver.com" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="중복" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal|center_vertical">
+                <haninkyu.yoo_dong.view.textview.SignInTextView
+                    android:text="비밀번호" />
+                <haninkyu.yoo_dong.view.edittxt.LoginPwEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal|center_vertical">
+                <haninkyu.yoo_dong.view.textview.SignInTextView
+                    android:text="비밀번호 확인" />
+                <haninkyu.yoo_dong.view.edittxt.LoginPwEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="확인" />
+            </TableRow>
+            <TableRow
+                android:gravity="center_horizontal|center_vertical">
+                <haninkyu.yoo_dong.view.textview.SignInTextView
+                    android:text="이름" />
+                <haninkyu.yoo_dong.view.edittxt.LoginEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="HEYDEN"
+                    android:layout_span="2"/>
+            </TableRow>
+            <TableRow
+                android:gravity="center_horizontal|center_vertical">
+                <haninkyu.yoo_dong.view.textview.SignInTextView
+                    android:text="연락처" />
+                <haninkyu.yoo_dong.view.textview.SignInTextView
+                    android:text="010-7372-6161"
+                    android:layout_span="2"/>
+            </TableRow>
+            <TableRow
+                android:gravity="center_horizontal|center_vertical">
+                <haninkyu.yoo_dong.view.textview.SignInTextView
+                    android:text="닉네임" />
+                <haninkyu.yoo_dong.view.edittxt.LoginEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="깜쯰기"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="중복" />
+            </TableRow>
+            <TableRow
+                android:gravity="center_horizontal|center_vertical">
+                <haninkyu.yoo_dong.view.textview.SignInTextView
+                    android:text="생년월일" />
+                <haninkyu.yoo_dong.view.edittxt.LoginEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="900412"
+                    android:layout_span="2"/>
+            </TableRow>
+            <TableRow
+                android:gravity="center_horizontal|center_vertical">
+                <haninkyu.yoo_dong.view.textview.SignInTextView
+                    android:text="성별" />
+                <haninkyu.yoo_dong.view.edittxt.LoginEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="남자"
+                    android:layout_span="2"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="등록"/>
+        <Button
+            android:id="@+id/quit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="취소"/>
+    </LinearLayout>
+</LinearLayout>
