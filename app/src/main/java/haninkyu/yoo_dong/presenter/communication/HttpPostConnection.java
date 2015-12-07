@@ -24,6 +24,7 @@ public class HttpPostConnection extends AsyncTask<Object, Void, Boolean> {
     private RestTemplate restTemplate;
 
     public HttpPostConnection(Activity mContext) {
+        // 버전 테스트
         this.mContext = mContext;
         this.mDlg = new ProgressDialog(mContext);
     }
