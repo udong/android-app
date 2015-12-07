@@ -7,29 +7,37 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name="haninkyu.yoo_dong.control.GlobalApplication"
+        android:name=".model.GlobalApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="658e849219869f85c86ea2d959087426" />
 
         <activity
-            android:name="haninkyu.yoo_dong.control.activity.BaseMainActivity"
+            android:name=".view.activity.BaseMainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view.login.LoginActivity" />
+        <activity android:name=".view.login.TutorialActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter></activity>
-        <!--<activity android:name="haninkyu.yoo_dong.control.activity.LoginActivity">
-        </activity>-->
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.login.SignInActivity" />
+        <activity
+            android:name=".view.login.SignInFormActivity" /><!--
+            android:windowSoftInputMode="adjustResize|adjustPan"-->
+        <activity android:name=".view.login.FindActivity"></activity>
     </application>
 
 </manifest>

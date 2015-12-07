@@ -6,6 +6,8 @@ package haninkyu.yoo_dong.model;
 public class Constant {
     public final static String LOG = "U-Dong log";
     public final static String PACKAGE = "haninkyu.yoo_dong";
+    public final static String IP = "http://172.30.110.215:8080/udong/";
+    static final public int REQUEST_IMAGE_ALBUM = 6161;
 
     //sample image
     public static final String BASE = "http://i.imgur.com/";

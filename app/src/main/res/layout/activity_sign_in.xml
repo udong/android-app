@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015.  In-Kyu Heyden Han
+  ~ 문의 : dlsrb0412@naver.com
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="haninkyu.yoo_dong.view.login.SignInActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="38dp"
+            android:text="회원가입"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingRight="60dp"
+        android:paddingLeft="60dp"
+        android:layout_weight="7">
+        <haninkyu.yoo_dong.view.button.LoginButton
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="signinBtn"
+            android:text="이메일로 가입"/>
+        <haninkyu.yoo_dong.view.button.LoginButton
+            android:id="@+id/kakotalk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="signinBtn"
+            android:text="카카오톡으로 가입"/>
+        <haninkyu.yoo_dong.view.button.LoginButton
+            android:id="@+id/facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="signinBtn"
+            android:text="페이스북으로 가입"/>
+
+    </LinearLayout>
+
+</LinearLayout>

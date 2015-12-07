@@ -10,23 +10,48 @@
     android:padding="8dp">
 
     <com.facebook.drawee.view.SimpleDraweeView
-        android:id="@+id/sumnail"
+        android:id="@+id/logo"
         android:layout_width="130dp"
         android:layout_height="130dp"
         fresco:placeholderImage="@drawable/kakao_default_profile_image" />
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/clubName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="웜컴퍼니" />
+        android:gravity="center_horizontal|center_vertical" />
+    <TextView
+        android:id="@+id/region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical" />
+    <TextView
+        android:id="@+id/leader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical" />
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical" />
+    <TextView
+        android:id="@+id/memberCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical" />
 
     <TextView
-        android:id="@+id/chairman"
+        android:id="@+id/memberLimit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="대표 : 윤영한" />
+        android:gravity="center_horizontal|center_vertical"/>
+
+
+    <TextView
+        android:id="@+id/permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical" />
 
 </LinearLayout>
