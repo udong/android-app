@@ -9,18 +9,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".view.login.TutorialActivity">
+    tools:context=".done.view.login.activity.TutorialActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dip"
-        android:layout_weight="7">
-        <ImageView
-            android:id="@+id/image"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/udong"/>
+        android:layout_weight="7"
+        android:background="@color/yellow">
     </LinearLayout>
 
     <LinearLayout

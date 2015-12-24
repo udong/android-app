@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="haninkyu.yoo_dong.view.login.SignInFormActivity">
+    tools:context=".done.view.login.activity.SignInFormActivity">
 
     <RelativeLayout
         android:id="@+id/imageLayer"
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:background="@color/gray">
 
-        <haninkyu.yoo_dong.view.imageview.CircleImageView
+        <haninkyu.yoo_dong.done.view.imageview.CircleImageView
             android:id="@+id/image"
             android:layout_width="160dp"
             android:layout_height="160dp"
@@ -24,7 +24,7 @@
             android:layout_centerVertical="true"
             android:layout_marginTop="20dp"
             android:onClick="signinformBtn"
-            android:src="@drawable/kakao_default_profile_image" />
+            android:src="@color/black" />
 
         <TextView
             android:layout_width="match_parent"
@@ -51,9 +51,9 @@
 
             <TableRow
                 android:gravity="center_horizontal|center_vertical">
-                <haninkyu.yoo_dong.view.textview.SignInTextView
+                <haninkyu.yoo_dong.done.view.login.textview.SignInTextView
                     android:text="이메일" />
-                <haninkyu.yoo_dong.view.edittxt.LoginEditText
+                <haninkyu.yoo_dong.done.view.login.edittxt.LoginEditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="dlsrb0412@naver.com" />
@@ -65,9 +65,9 @@
 
             <TableRow
                 android:gravity="center_horizontal|center_vertical">
-                <haninkyu.yoo_dong.view.textview.SignInTextView
+                <haninkyu.yoo_dong.done.view.login.textview.SignInTextView
                     android:text="비밀번호" />
-                <haninkyu.yoo_dong.view.edittxt.LoginPwEditText
+                <haninkyu.yoo_dong.done.view.login.edittxt.LoginPwEditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_span="2" />
@@ -75,9 +75,9 @@
 
             <TableRow
                 android:gravity="center_horizontal|center_vertical">
-                <haninkyu.yoo_dong.view.textview.SignInTextView
+                <haninkyu.yoo_dong.done.view.login.textview.SignInTextView
                     android:text="비밀번호 확인" />
-                <haninkyu.yoo_dong.view.edittxt.LoginPwEditText
+                <haninkyu.yoo_dong.done.view.login.edittxt.LoginPwEditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <Button
@@ -87,27 +87,20 @@
             </TableRow>
             <TableRow
                 android:gravity="center_horizontal|center_vertical">
-                <haninkyu.yoo_dong.view.textview.SignInTextView
-                    android:text="이름" />
-                <haninkyu.yoo_dong.view.edittxt.LoginEditText
+                <haninkyu.yoo_dong.done.view.login.textview.SignInTextView
+                    android:text="연락처" />
+                <haninkyu.yoo_dong.done.view.login.textview.SignInTextView
+                    android:text="010-7372-6161"/>
+                <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="HEYDEN"
-                    android:layout_span="2"/>
+                    android:text="인증" />
             </TableRow>
             <TableRow
                 android:gravity="center_horizontal|center_vertical">
-                <haninkyu.yoo_dong.view.textview.SignInTextView
-                    android:text="연락처" />
-                <haninkyu.yoo_dong.view.textview.SignInTextView
-                    android:text="010-7372-6161"
-                    android:layout_span="2"/>
-            </TableRow>
-            <TableRow
-                android:gravity="center_horizontal|center_vertical">
-                <haninkyu.yoo_dong.view.textview.SignInTextView
+                <haninkyu.yoo_dong.done.view.login.textview.SignInTextView
                     android:text="닉네임" />
-                <haninkyu.yoo_dong.view.edittxt.LoginEditText
+                <haninkyu.yoo_dong.done.view.login.edittxt.LoginEditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="깜쯰기"/>
@@ -118,9 +111,9 @@
             </TableRow>
             <TableRow
                 android:gravity="center_horizontal|center_vertical">
-                <haninkyu.yoo_dong.view.textview.SignInTextView
+                <haninkyu.yoo_dong.done.view.login.textview.SignInTextView
                     android:text="생년월일" />
-                <haninkyu.yoo_dong.view.edittxt.LoginEditText
+                <haninkyu.yoo_dong.done.view.login.edittxt.LoginEditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="900412"
@@ -128,9 +121,9 @@
             </TableRow>
             <TableRow
                 android:gravity="center_horizontal|center_vertical">
-                <haninkyu.yoo_dong.view.textview.SignInTextView
+                <haninkyu.yoo_dong.done.view.login.textview.SignInTextView
                     android:text="성별" />
-                <haninkyu.yoo_dong.view.edittxt.LoginEditText
+                <haninkyu.yoo_dong.done.view.login.edittxt.LoginEditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:hint="남자"

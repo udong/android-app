@@ -12,8 +12,7 @@
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/logo"
         android:layout_width="130dp"
-        android:layout_height="130dp"
-        fresco:placeholderImage="@drawable/kakao_default_profile_image" />
+        android:layout_height="130dp" />
 
     <TextView
         android:id="@+id/clubName"

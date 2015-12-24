@@ -3,18 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".view.fragment.MainFragment">
-
-    <GridLayout
-        android:id="@+id/grid"
+    tools:context=".done.view.main.fragment.MainFragment">
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:alignmentMode="alignBounds"
-        android:columnCount="2"
-        android:background="@color/grayContact"
-        android:orientation="horizontal"
-        android:padding="16dp"
-        android:useDefaultMargins="true">
-
-    </GridLayout>
+        android:layout_height="match_parent">
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alignmentMode="alignBounds"
+            android:foregroundGravity="center"
+            android:columnCount="2"
+            android:background="@color/grayContact"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:useDefaultMargins="true">
+        </GridLayout>
+    </ScrollView>
 </FrameLayout>
