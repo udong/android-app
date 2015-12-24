@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".model.GlobalApplication"
+        android:name=".done.model.GlobalApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -22,22 +22,25 @@
             android:value="658e849219869f85c86ea2d959087426" />
 
         <activity
-            android:name=".view.activity.BaseMainActivity"
+            android:name=".done.view.activity.BaseMainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".view.login.LoginActivity" />
-        <activity android:name=".view.login.TutorialActivity">
+        <activity android:name=".done.view.login.activity.LoginActivity" />
+        <activity android:name=".done.view.login.activity.TutorialActivity">
+
+        </activity>
+        <activity android:name=".done.view.login.activity.SignInActivity" />
+        <activity android:name=".done.view.login.activity.SignInFormActivity" />
+        <!-- android:windowSoftInputMode="adjustResize|adjustPan" -->
+        <activity android:name=".done.view.login.activity.FindActivity" />
+        <activity android:name=".doing.view.activity.ClubCreateActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.login.SignInActivity" />
-        <activity
-            android:name=".view.login.SignInFormActivity" /><!--
-            android:windowSoftInputMode="adjustResize|adjustPan"-->
-        <activity android:name=".view.login.FindActivity"></activity>
+        <activity android:name=".doing.view.activity.ClubMainActivity"></activity>
     </application>
 
 </manifest>

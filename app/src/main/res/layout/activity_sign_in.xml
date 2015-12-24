@@ -9,7 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="haninkyu.yoo_dong.view.login.SignInActivity">
+    tools:context=".done.view.login.activity.SignInActivity">
     
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,19 +30,19 @@
         android:paddingRight="60dp"
         android:paddingLeft="60dp"
         android:layout_weight="7">
-        <haninkyu.yoo_dong.view.button.LoginButton
+        <haninkyu.yoo_dong.done.view.login.button.LoginButton
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="signinBtn"
             android:text="이메일로 가입"/>
-        <haninkyu.yoo_dong.view.button.LoginButton
+        <haninkyu.yoo_dong.done.view.login.button.LoginButton
             android:id="@+id/kakotalk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="signinBtn"
             android:text="카카오톡으로 가입"/>
-        <haninkyu.yoo_dong.view.button.LoginButton
+        <haninkyu.yoo_dong.done.view.login.button.LoginButton
             android:id="@+id/facebook"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
